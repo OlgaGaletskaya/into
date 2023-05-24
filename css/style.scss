@@ -1,0 +1,218 @@
+$grad1:linear-gradient(143.3deg, #11213A 21.35%, #103061 95.03%);
+$white: #fff;
+$light-gray: #F7F9F8;
+$accent: #0E7D98;
+$accent-additional: #9DD2F0;
+$main:#1A1A18;
+@mixin big {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 75px;
+    /* identical to box height */
+    
+    text-align: center;
+    text-transform: uppercase;
+}
+@mixin accent-text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;    
+}
+body{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height:1.2;
+    color: $main;
+background-color: $light-gray;
+}
+.btn{
+    border: 2px solid $accent-additional;
+    color: $accent-additional;
+        width: 344px;
+        text-align: center;
+       
+        display: inline-block;
+        padding: 20px 0;
+        @include accent-text();
+    &:hover{
+        background-color: $accent-additional;
+        color: $light-gray;
+    }
+    &-accent{
+        color: $light-gray;
+        width: 344px;
+        text-align: center;
+        background-color: $accent-additional;
+        display: inline-block;
+        padding: 20px 0;
+        @include accent-text();
+        
+
+    }
+}
+
+h1{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    text-transform: uppercase;
+    color: $accent;
+    position: relative;
+    padding-bottom: 52px;
+    & span{
+        color: $accent-additional;
+    }
+    &::before{
+        content: "";
+        width: 50%;
+        height: 2px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: $accent-additional;
+    }
+
+}
+h2{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 44px;
+width: calc((100% / 3) * 2);
+margin-bottom: 50px;
+& span{
+    color: $accent-additional;
+}
+}
+h3{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    width: calc((100% / 3) * 2);
+    position: relative;
+    padding-top: 52px;
+    & span{
+        color: $accent-additional;
+    }
+    &::before{
+        content: "";
+        width: 50%;
+        height: 2px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: $accent-additional;
+    }
+}
+section{
+    padding: 100px 0;
+}
+.container{
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+.bg-body-tertiary{
+    background-color: #ffffff84 !important;
+}
+.navbar{
+    &-brand{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+       & img{
+            max-width: 50px;
+        } 
+    } 
+}
+.banner{
+   width: 100%;
+   background-image: url('../images/main_bg.png');
+   &__inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 80vh;
+    gap: 100px;
+   }
+   &__content{
+    width: calc(50% - 20px);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    & p{
+        width: calc((100% /3) * 2);
+    }
+   }
+   &__advantages{
+    display: flex;
+    gap: 20px;
+    width: calc((100% / 3) * 2);
+   }
+}
+.advantage{
+    text-align: center;
+    &__num{
+        @include big();
+        color: $accent;
+    }
+    &__title{
+        @include accent-text();
+        color: $accent;
+    }
+}
+.about{
+    background-color: $white;
+    position: relative;
+    &__content, &__services{
+        padding-left: 25%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: start;
+    }
+    &__services{
+        margin: 50px 0;
+    }
+    &__bg{
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
+.service {
+    &s__wrapper{
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 20px;
+        grid-template-areas:
+        "a b d"
+        "a c c";
+        & .service:first-child{
+            grid-area: a;
+        }
+        & .service:last-child{
+            grid-area: c;
+        }
+    }
+    min-height: 100px;
+    width: 100%;
+    background-color: $light-gray;
+    padding: 50px 20px;
+}
