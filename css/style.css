@@ -197,7 +197,7 @@ section {
 }
 
 .service {
-  min-height: 100px;
+  min-height: 300px;
   width: 100%;
   background-color: #F7F9F8;
   padding: 50px 20px;
