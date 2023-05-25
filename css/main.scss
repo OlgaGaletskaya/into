@@ -26,8 +26,8 @@ body{
     font-size: 18px;
     line-height:1.2;
     color: $main;
-background-color: $light-gray;
-transition:color 0.4s ease-out;
+    background-color: $light-gray;
+    transition:color 0.4s ease-out;
 }
 .btn{
     border: 2px solid $accent-additional;
@@ -391,6 +391,12 @@ footer{
             position: relative;
             height: 100%;
             padding: 0;
+        }
+        & ul{
+            @include accent-text();
+            & li{
+                padding: 20px;
+            }
         }
     }
     &__content{
