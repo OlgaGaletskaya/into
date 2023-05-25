@@ -140,6 +140,15 @@ section {
   width: 100%;
   background-image: url("../images/main_bg.png");
 }
+.content .banner {
+  background: none;
+}
+.banner img {
+  position: absolute;
+  top: 100px;
+  right: 0;
+  width: 60%;
+}
 .banner__inner {
   display: flex;
   flex-direction: column;
@@ -211,6 +220,7 @@ section {
   width: 100%;
   background-color: #3d4349;
   padding: 50px 20px;
+  position: relative;
 }
 .services__wrapper {
   display: grid;
@@ -225,6 +235,13 @@ section {
 }
 .services__wrapper .service:last-child {
   grid-area: c;
+}
+.service a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 
 .audit__content {
