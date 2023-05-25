@@ -1,4 +1,4 @@
-
+$grad1:linear-gradient(143.3deg, #11213A 21.35%, #103061 95.03%);
 
 @mixin big {
     font-family: 'Raleway';
@@ -308,8 +308,9 @@ section{
 
 .reviews{
     background-color: $white;
-    & p:first-child(){
+    &__subtitle{
         margin-bottom: 50px;
+        padding-right: 20%;
     }
     &__inner{
         padding: 0 calc((100%/12)*2);
@@ -331,4 +332,7 @@ section{
             color: $accent;
         }
     }
+}
+footer{
+    background: $grad1;
 }

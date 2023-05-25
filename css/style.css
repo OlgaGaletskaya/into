@@ -319,8 +319,9 @@ section {
 .reviews {
   background-color: #fff;
 }
-.reviews p:first-child {
+.reviews__subtitle {
   margin-bottom: 50px;
+  padding-right: 20%;
 }
 .reviews__inner {
   padding: 0 16.6666666667%;
@@ -341,4 +342,8 @@ section {
 }
 .reviews__company a {
   color: #0E7D98;
+}
+
+footer {
+  background: linear-gradient(143.3deg, #11213A 21.35%, #103061 95.03%);
 }/*# sourceMappingURL=style.css.map */
