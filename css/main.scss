@@ -280,12 +280,55 @@ section{
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        gap: 20px;
+        gap: 10px;
+        @include accent-text();
         & img{
             filter: brightness(0);
             &:hover{
                 filter: none;
             }
+        }
+    }
+}
+.slick-dots{
+    display: flex !important;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0 !important;
+    & button{
+        color: transparent;
+        border: none;
+        background-color: $light-gray;
+    }
+    & .slick-active button{
+        background-color: $accent-additional;
+    }
+}
+
+.reviews{
+    background-color: $white;
+    & p:first-child(){
+        margin-bottom: 50px;
+    }
+    &__inner{
+        padding: 0 calc((100%/12)*2);
+    }
+    &__item{
+        display: grid !important;
+        grid-template-columns:1fr 3fr;
+        gap: 20px;
+        padding: 20px;
+        background-color: $light-gray;
+    }
+    &__company{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-right: 20px;
+        border-right: 1px solid $accent;
+        & a{
+            color: $accent;
         }
     }
 }

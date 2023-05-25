@@ -272,4 +272,77 @@ section {
 .audit__form form input:focus-visible {
   outline-offset: none;
   outline: none;
+}
+
+.client__inner {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  gap: 20px;
+}
+.client__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+.client__item img {
+  filter: brightness(0);
+}
+.client__item img:hover {
+  filter: none;
+}
+
+.slick-dots {
+  display: flex !important;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0 !important;
+}
+.slick-dots button {
+  color: transparent;
+  border: none;
+  background-color: #3d4349;
+}
+.slick-dots .slick-active button {
+  background-color: #9DD2F0;
+}
+
+.reviews {
+  background-color: #1A1A18;
+}
+.reviews__inner {
+  padding: 0 16.6666666667%;
+}
+.reviews__item {
+  display: grid !important;
+  grid-template-columns: 1fr 3fr;
+  gap: 20px;
+  padding: 20px;
+  background-color: #3d4349;
+}
+.reviews__company {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-right: 20px;
+  border-right: 1px solid #0E7D98;
+}
+.reviews__company a {
+  color: #0E7D98;
+}
+
+.client__item img {
+  filter: brightness(0) invert(1);
+}
+.client__item img:hover {
+  filter: none;
 }/*# sourceMappingURL=style-dark.css.map */

@@ -285,11 +285,60 @@ section {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
 }
 .client__item img {
   filter: brightness(0);
 }
 .client__item img:hover {
   filter: none;
+}
+
+.slick-dots {
+  display: flex !important;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0 !important;
+}
+.slick-dots button {
+  color: transparent;
+  border: none;
+  background-color: #F7F9F8;
+}
+.slick-dots .slick-active button {
+  background-color: #9DD2F0;
+}
+
+.reviews {
+  background-color: #fff;
+}
+.reviews p:first-child {
+  margin-bottom: 50px;
+}
+.reviews__inner {
+  padding: 0 16.6666666667%;
+}
+.reviews__item {
+  display: grid !important;
+  grid-template-columns: 1fr 3fr;
+  gap: 20px;
+  padding: 20px;
+  background-color: #F7F9F8;
+}
+.reviews__company {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-right: 20px;
+  border-right: 1px solid #0E7D98;
+}
+.reviews__company a {
+  color: #0E7D98;
 }/*# sourceMappingURL=style.css.map */

@@ -21,3 +21,11 @@ window.onload = function(){
     document.getElementById("style").href = "css/style-dark.css";
   }
 }
+
+$(document).ready(function(){
+  $('.reviews__inner').slick({
+    infinite: true,
+    dots: true,
+    arrows: false
+  });
+});

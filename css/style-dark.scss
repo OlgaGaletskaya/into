@@ -5,3 +5,13 @@ $accent: #0E7D98;
 $accent-additional: #9DD2F0;
 $main:#fff;
 @import "main.scss";
+.client{
+    &__item{
+        & img{
+            filter: brightness(0) invert(1);
+            &:hover{
+                filter: none;
+            }
+        }
+    }
+}
