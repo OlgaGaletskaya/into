@@ -61,8 +61,96 @@
           </nav>
 
 </header>
-    <main>
-        
+    <main class="content">
+        <section class="banner">
+            <div class="container">
+                <div class="banner__inner">
+                    <div class="banner__content">
+                        <h1>Выгодные лицензии на amoCRM и Битрикс 24</h1>
+                    <p>
+                        Значимость этих проблем настолько очевидна, что понимание сути ресурсосберегающих технологий не оставляет шанса для кластеризации усилий. Господа, убеждённость некоторых оппонентов обеспечивает актуальность модели развития. Но акционеры крупнейших компаний подвергнуты целой серии независимых исследований.
+
+                    </p>
+                    <a href="" class="btn-accent">
+                        Приобрести
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="calc">
+            <div class="container">
+                <div class="calc__inner">
+                    <div class="calc__nav">
+                        <a href="/" class="current">amoCRM</a>
+                        <a href="/bitrix24.html">Битрикс24</a>
+                        <a href="/1c-bitrix">1С-Битрикс: <br> Управление сайтом</a>
+                        <a href="/bitrix24-market-plus">Битрикс24.Маркет Плюс</a>
+                    </div>
+                </div>
+                <form action="">
+                    <div class="rate">
+                            <label  class="rate__item">
+                                <input type="radio" name="rate" id="rate-standart" value="499" checked onclick="calc()">
+                                <h4>Базовый</h4>
+                                <p class="rate__price">499₽</p>
+                                <p>За 1 польз./мес.</p>
+                            </label>
+                            
+                            <label  class="rate__item">
+                                <input type="radio" name="rate" id="rate-extend" value="999" onclick="calc()">
+                                <h4>Расширенный</h4>
+                                <p class="rate__price">999₽</p>
+                                <p>За 1 польз./мес.</p>
+                            </label>
+                            <label  class="rate__item">
+                                <input type="radio" name="rate" id="rate-prof" value="1499" onclick="calc()">
+                                <h4>Профессиональный</h4>
+                                <p class="rate__price">1499₽</p>
+                                <p>За 1 польз./мес.</p>
+                            </label>
+                            
+                    </div>
+                    <div class="calc__add">
+                        <div class="calc__text">
+                            <p class="accent__text">Количество пользователей:</p>
+                            <p id="wh_plus"></p>
+                            <p>За каждого пользователя подарок</p>
+                        </div>
+                        
+                        <div class="calc__num">
+                            <input type="text" value="1" id="users" onchange="calc()"  name="users">
+                            <div class="calc__btns">
+                                    
+                                <div class="calc__btn" onclick="plusUser()"><div>+</div></div>
+                                <div class="calc__btn" onclick="minUser()"><div>-</div></div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="calc__add">
+                        <div class="calc__text">
+                            <p class="accent__text">Срок лицензии:</p>
+                            <p>+ <span id="lenght_plus">1 месяц</span> в подарок</p>
+                        </div>
+                        
+                        <div class="calc__num">
+                            <input type="text" value="6" name="length" id="length" onchange="calc()">
+                            <div class="calc__btns">
+                                    
+                                <div class="calc__btn" onclick="plusTime()"><div>+</div></div>
+                                <div class="calc__btn" onclick="minTime()"><div>-</div></div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!--div class="calc__add">
+                        <input type="number" name="length" id="length" onchange="calc()">
+                    </div-->
+                    <p id="result">0</p>
+                </form>
+            </div>
+        </section>
     </main>
     <footer>
         <div class="container">
@@ -77,5 +165,6 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="../js/main2.js"></script>
+    <script src="../js/calc-amo.js"></script>
 </body>
 </html>

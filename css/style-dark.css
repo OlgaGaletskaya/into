@@ -446,6 +446,117 @@ footer {
 .case > * > * {
   padding-bottom: 100px;
 }
+.calc {
+  padding-top: 0;
+}
+.calc__nav {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  gap: 20px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  padding-bottom: 0;
+  align-items: center;
+}
+.calc__nav a {
+  display: flex;
+  height: 68px;
+  width: 100%;
+  align-items: center;
+  color: #707880;
+  border-bottom: 1px solid #707880;
+  text-align: center;
+  justify-content: center;
+  padding: 10px 0;
+}
+.calc__nav a:hover, .calc__nav a.current {
+  color: #0E7D98;
+  border-bottom: 1px solid #0E7D98;
+  text-align: center;
+}
+.calc__nav a.current {
+  background-color: #1A1A18;
+}
+.calc form {
+  background-color: #1A1A18;
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+.calc form > * {
+  width: 70%;
+}
+.calc__add {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.calc__num {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+}
+.calc__btns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.calc__btn {
+  background-color: #9DD2F0;
+  color: #fff;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+
+.rate {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+.rate__item {
+  background-color: #3d4349;
+  position: relative;
+  padding: 30px 20px;
+  text-align: center;
+}
+.rate__item input {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.rate__price {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 75px;
+  /* identical to box height */
+  text-align: center;
+  text-transform: uppercase;
+  color: #9DD2F0;
+}
+
 .client__item img {
   filter: brightness(0) invert(1);
 }

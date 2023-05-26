@@ -1,4 +1,5 @@
 $grad1:linear-gradient(143.3deg, #11213A 21.35%, #103061 95.03%);
+$dark-gray: #707880;
 
 @mixin big {
     font-family: 'Raleway';
@@ -434,5 +435,96 @@ footer{
     }
     &__result{
         
+    }
+}
+.calc{
+    padding-top: 0;
+    &__nav{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        width: 100%;
+        gap: 20px;
+        @include accent-text();
+        padding-bottom: 0;
+        align-items: center;
+        & a{
+            display: flex;
+            height: 68px;
+            width: 100%;
+            align-items: center;
+            color: $dark-gray;
+            border-bottom: 1px solid $dark-gray;
+            text-align: center;
+            justify-content: center;
+            padding: 10px 0;
+
+            &:hover, &.current{
+                color: $accent;
+                border-bottom: 1px solid $accent;
+                text-align: center;
+            }
+            &.current{
+                background-color: $white;
+            }
+        }
+    }
+    & form{
+        background-color: $white;
+        padding: 100px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+        &>*{
+            width: 70%;
+        }
+        
+    }
+    &__add{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    &__num{
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        gap: 20px;
+    }
+    &__btns{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    &__btn{
+        background-color: $accent-additional;
+        color: #fff;
+        @include accent-text();
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        user-select: none;
+        cursor: pointer;
+    }
+}
+.rate{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+    &__item{
+        background-color: $light-gray;
+        position: relative;
+        padding: 30px 20px;
+        text-align: center;
+        & input{
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+    }
+    &__price{
+        @include big();
+        color: $accent-additional;
     }
 }
