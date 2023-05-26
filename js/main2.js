@@ -20,6 +20,7 @@ window.onload = function(){
   else{
     document.getElementById("style").href = "../css/style-dark.css";
   }
+  
 }
 
 $(document).ready(function(){

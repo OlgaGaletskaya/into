@@ -149,12 +149,18 @@ section {
   right: 0;
   width: 60%;
 }
+.calc .banner img {
+  top: 0;
+}
 .banner__inner {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   min-height: 80vh;
   gap: 100px;
+}
+.calc .banner__inner {
+  justify-content: start;
 }
 .banner__content {
   width: calc(50% - 20px);
@@ -535,6 +541,13 @@ footer {
 .calc__result {
   background-color: #F7F9F8;
   padding: 0 50px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+}
+.calc__result img {
+  margin: 50px 0;
+  max-height: calc(100% - 100px);
 }
 
 .rate {
@@ -557,9 +570,29 @@ footer {
   right: 20px;
   opacity: 0;
 }
+.rate__adv {
+  font-size: 14px;
+  text-align: left;
+  margin-left: 20px !important;
+  padding-left: 20px !important;
+}
+.rate__adv li {
+  position: relative;
+}
+.rate__adv li::before {
+  content: "";
+  position: absolute;
+  left: -25px;
+  width: 16px;
+  height: 12px;
+  margin-right: 12px;
+  background: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20width%3D%2216px%22%20height%3D%2212px%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20%20fill%3D%22%23bdd660%22%20d%3D%22M16.010%2C2.093%20L6.052%2C12.007%20L6.002%2C11.957%20L5.952%2C12.007%20L-0.007%2C6.093%20L2.103%2C3.990%20L5.998%2C7.856%20L13.899%2C-0.010%20L16.010%2C2.093%20Z%22/%3E%3C/svg%3E) no-repeat;
+  background-size: contain;
+}
 .rate input[type=radio]:checked ~ div, .rate input[type=radio]:hover ~ div {
   background-color: #0E7D98;
   color: white;
+  height: 100%;
 }
 .rate__price {
   font-family: "Raleway";

@@ -83,8 +83,8 @@ function calc(){
     document.getElementById("result").innerHTML = result+ "₽";
     wh = Math.trunc(result/9990);
     if(wh>0){
-        document.getElementById("wh_plus").innerHTML ="Вы получите "+ wh+ "ч. в подарок";
-        document.getElementById("wh_plus-res").innerHTML ="Вы получите "+ wh+ "ч. в подарок";
+        document.getElementById("wh_plus").innerHTML ="Вы получите "+ wh+ " ч. в подарок";
+        document.getElementById("wh_plus-res").innerHTML ="Вы получите "+ wh+ " ч. в подарок";
     } else{
         document.getElementById("wh_plus").innerHTML =" ";
         document.getElementById("wh_plus-res").innerHTML =" ";
