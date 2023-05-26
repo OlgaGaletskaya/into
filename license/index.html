@@ -91,23 +91,31 @@
                 <form action="">
                     <div class="rate">
                             <label  class="rate__item">
-                                <input type="radio" name="rate" id="rate-standart" value="499" checked onclick="calc()">
-                                <h4>Базовый</h4>
-                                <p class="rate__price">499₽</p>
-                                <p>За 1 польз./мес.</p>
+                                <input type="radio" name="rate" id="rate-standart" value="499" onclick="setRate()">
+                                <div>
+
+                                    <h4>Базовый</h4>
+                                    <p class="rate__price">499₽</p>
+                                    <p>За 1 польз./мес.</p>
+                                </div>
                             </label>
                             
                             <label  class="rate__item">
-                                <input type="radio" name="rate" id="rate-extend" value="999" onclick="calc()">
-                                <h4>Расширенный</h4>
-                                <p class="rate__price">999₽</p>
-                                <p>За 1 польз./мес.</p>
+                                <input type="radio" name="rate" id="rate-extend" value="999" onclick="setRate()">
+                                <div>
+                                    <h4>Расширенный</h4>
+                                    <p class="rate__price">999₽</p>
+                                    <p>За 1 польз./мес.</p>
+                                </div>
                             </label>
                             <label  class="rate__item">
-                                <input type="radio" name="rate" id="rate-prof" value="1499" onclick="calc()">
-                                <h4>Профессиональный</h4>
-                                <p class="rate__price">1499₽</p>
-                                <p>За 1 польз./мес.</p>
+                                <input type="radio" name="rate" id="rate-prof" value="1499" onclick="setRate()">
+                                <div>
+                                    <h4>Профессиональный</h4>
+                                    <p class="rate__price">1499₽</p>
+                                    <p>За 1 польз./мес.</p>
+
+                                </div>
                             </label>
                             
                     </div>
@@ -115,15 +123,17 @@
                         <div class="calc__text">
                             <p class="accent__text">Количество пользователей:</p>
                             <p id="wh_plus"></p>
-                            <p>За каждого пользователя подарок</p>
                         </div>
                         
                         <div class="calc__num">
-                            <input type="text" value="1" id="users" onchange="calc()"  name="users">
+                            <p id="users"></p>
+                            <!--input type="text" value="1" id="users" onchange="calc()"  name="users"-->
                             <div class="calc__btns">
-                                    
-                                <div class="calc__btn" onclick="plusUser()"><div>+</div></div>
                                 <div class="calc__btn" onclick="minUser()"><div>-</div></div>
+                                <div class="calc__btn" onclick="plusUser()"><div>+1</div></div>
+                                <div class="calc__btn" onclick="plusUser5()"><div>+5</div></div>
+                                <div class="calc__btn" onclick="plusUser10()"><div>+10</div></div>
+                                
                             </div>
                         </div>
                         
@@ -135,11 +145,13 @@
                         </div>
                         
                         <div class="calc__num">
-                            <input type="text" value="6" name="length" id="length" onchange="calc()">
+                            <p id="length"></p>
+                            <!--input type="text" value="6" name="length" id="length" onchange="calc()"-->
                             <div class="calc__btns">
-                                    
                                 <div class="calc__btn" onclick="plusTime()"><div>+</div></div>
                                 <div class="calc__btn" onclick="minTime()"><div>-</div></div>
+                                <div class="calc__btn" onclick="minTimemin()"><div>min</div></div>
+                                <div class="calc__btn" onclick="minTimemax()"><div>max</div></div>
                             </div>
                         </div>
                         
@@ -147,7 +159,15 @@
                     <!--div class="calc__add">
                         <input type="number" name="length" id="length" onchange="calc()">
                     </div-->
-                    <p id="result">0</p>
+                    <!--p id="result">0</p-->
+                    <div class="calc__result">
+                        <h2>Лицензия amoCRM</h2>
+                        <p><span class="accent__text">Тариф:</span> <span id="rate"></span> </p>
+                        <p><span class="accent__text">Срок:</span> <span id="time"></span> <span id="plus__time"></span></p>
+                        <p><span class="accent__text">Количество пользователей:</span> <span id="usersNum"></span> </p>
+                        <p id="wh_plus-res"></p>
+                        <h2>Стоимость <span id="result"></span> </h2>
+                    </div>
                 </form>
             </div>
         </section>

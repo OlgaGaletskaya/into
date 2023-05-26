@@ -500,12 +500,14 @@ footer {
 }
 .calc__num {
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 1fr 3fr;
   gap: 20px;
+  font-size: 24px;
+  line-height: 48px;
 }
 .calc__btns {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 10px;
 }
 .calc__btn {
@@ -527,6 +529,13 @@ footer {
           user-select: none;
   cursor: pointer;
 }
+.calc__btn:hover {
+  background-color: #0E7D98;
+}
+.calc__result {
+  background-color: #F7F9F8;
+  padding: 0 50px;
+}
 
 .rate {
   display: grid;
@@ -537,13 +546,20 @@ footer {
 .rate__item {
   background-color: #F7F9F8;
   position: relative;
-  padding: 30px 20px;
   text-align: center;
+}
+.rate__item div {
+  padding: 30px 20px;
 }
 .rate__item input {
   position: absolute;
   top: 20px;
   right: 20px;
+  opacity: 0;
+}
+.rate input[type=radio]:checked ~ div, .rate input[type=radio]:hover ~ div {
+  background-color: #0E7D98;
+  color: white;
 }
 .rate__price {
   font-family: "Raleway";

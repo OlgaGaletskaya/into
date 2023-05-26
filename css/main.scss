@@ -487,12 +487,14 @@ footer{
     }
     &__num{
         display: grid;
-        grid-template-columns: 3fr 1fr;
+        grid-template-columns: 1fr 3fr;
         gap: 20px;
+        font-size: 24px;
+        line-height: 48px;
     }
     &__btns{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         gap: 10px;
     }
     &__btn{
@@ -505,6 +507,13 @@ footer{
         align-items: center;
         user-select: none;
         cursor: pointer;
+        &:hover{
+            background-color: $accent;
+        }
+    }
+    &__result{
+        background-color: $light-gray;
+        padding: 0 50px;
     }
 }
 .rate{
@@ -515,13 +524,22 @@ footer{
     &__item{
         background-color: $light-gray;
         position: relative;
-        padding: 30px 20px;
         text-align: center;
+        & div{
+            padding: 30px 20px;
+        }
         & input{
             position: absolute;
             top: 20px;
             right: 20px;
+            opacity: 0;
         }
+        
+        
+    }
+    & input[type="radio"]:checked ~ div, & input[type="radio"]:hover ~ div{
+        background-color: $accent;
+        color: white;
     }
     &__price{
         @include big();
