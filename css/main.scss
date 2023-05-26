@@ -532,6 +532,9 @@ footer{
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     width: 100%;
+    &__desc{
+        font-size: 14px;
+    }
     &__item{
         background-color: $light-gray;
         position: relative;
