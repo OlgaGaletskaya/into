@@ -609,6 +609,18 @@ footer {
   color: #9DD2F0;
 }
 
+.fancybox-content {
+  background-color: transparent;
+}
+
+.fancybox-button svg {
+  color: #FFFFFF;
+}
+
+.video__inner a {
+  padding: 10px;
+}
+
 .client__item img {
   filter: brightness(0) invert(1);
 }

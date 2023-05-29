@@ -607,4 +607,16 @@ footer {
   text-align: center;
   text-transform: uppercase;
   color: #9DD2F0;
+}
+
+.fancybox-content {
+  background-color: transparent;
+}
+
+.fancybox-button svg {
+  color: #FFFFFF;
+}
+
+.video__inner a {
+  padding: 10px;
 }/*# sourceMappingURL=style.css.map */
