@@ -73,7 +73,7 @@ $(document).ready(function(){
   $('.video__inner').slick({
     infinite: true,
     slidesToShow: 5,
-    slidesToScroll: 1,
+    //slidesToScroll: 1,
     arrows: true,
     //swipe: false
   });
