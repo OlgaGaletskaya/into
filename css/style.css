@@ -371,10 +371,6 @@ section {
   color: #0E7D98;
 }
 
-footer {
-  background: linear-gradient(143.3deg, #11213A 21.35%, #103061 95.03%);
-}
-
 .content h2 {
   margin-top: 50px;
 }
@@ -717,6 +713,10 @@ footer {
   background-repeat: no-repeat;
   background-position-y: center;
   background-position-x: 10px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .fancybox-content {
@@ -758,4 +758,17 @@ footer {
 
 .slick-list {
   overflow: visible;
+}
+
+.footer {
+  padding: 50px 0;
+  color: #fff;
+  background-color: #0E7D98;
+}
+.footer__inner {
+  display: grid;
+  grid-template-columns: 2fr repeat(6, 1fr);
+}
+.footer__logo {
+  max-width: 100px;
 }/*# sourceMappingURL=style.css.map */

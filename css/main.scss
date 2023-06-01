@@ -359,9 +359,7 @@ section{
         }
     }
 }
-footer{
-    background: $grad1;
-}
+
 .content{
     & h2{
         margin-top: 50px;
@@ -681,6 +679,7 @@ left: -25px;
     background-repeat: no-repeat;
     background-position-y: center;
     background-position-x: 10px;
+    user-select: none;
 }
 .fancybox-content{
     background-color: transparent;
@@ -716,4 +715,16 @@ left: -25px;
 }
 .slick-list{
     overflow: visible;
+}
+.footer{
+    padding: 50px 0;
+    color: #fff;
+    background-color: $accent;
+    &__inner{
+        display: grid;
+        grid-template-columns: 2fr repeat(6, 1fr);
+    }
+    &__logo{
+        max-width: 100px;
+    }
 }
