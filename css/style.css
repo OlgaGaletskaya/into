@@ -767,8 +767,19 @@ section {
 }
 .footer__inner {
   display: grid;
-  grid-template-columns: 2fr repeat(6, 1fr);
+  grid-template-columns: 2fr repeat(5, 1fr);
+  gap: 20px;
+  font-size: 14px;
+}
+.footer__inner .accent__text {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 30px;
 }
 .footer__logo {
   max-width: 100px;
+}
+.footer__cont a {
+  margin: 20px 0;
+  display: block;
 }/*# sourceMappingURL=style.css.map */
