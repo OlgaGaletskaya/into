@@ -7,6 +7,8 @@ body {
   color: #fff;
   background-color: #3d4349;
   transition: color 0.4s ease-out;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .btn {
@@ -356,6 +358,7 @@ section {
   gap: 20px;
   padding: 20px;
   background-color: #3d4349;
+  margin: 20px;
 }
 .reviews__company {
   display: flex;
@@ -640,6 +643,15 @@ footer {
 .integ__wrapper {
   background-color: #1A1A18;
 }
+.integ__wrapper > .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.integ__source {
+  height: 200px;
+  display: none;
+}
 .integ > div {
   position: absolute;
   top: 0;
@@ -694,6 +706,30 @@ footer {
 
 .video__inner a {
   padding: 10px;
+}
+
+.slick-arrow {
+  height: 70px;
+  width: 35px;
+  background-color: transparent;
+  border-color: transparent;
+  color: transparent;
+  background-image: url(../images/arrow.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 40%;
+  right: -30px;
+  z-index: 5;
+}
+
+.slick-prev {
+  left: -30px;
+  transform: rotate(180deg);
+}
+
+.slick-list {
+  overflow: visible;
 }
 
 .client__item img {

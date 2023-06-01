@@ -21,12 +21,43 @@ window.onload = function(){
     document.getElementById("style").href = "css/style-dark.css";
   }
 }
+function showInteg(){
+  document.getElementById("vk").style.display = "none"
+  document.getElementById("wa").style.display = "none"
+  document.getElementById("bs").style.display = "none"
+  document.getElementById("teli").style.display = "none"
+  document.getElementById("gc").style.display = "none"
+}
+function showIntegVK(){
+  showInteg()
+  document.getElementById("vk").style.display = "block";
 
+}
+function showIntegWA(){
+  showInteg()
+  document.getElementById("wa").style.display = "block";
+
+}
+function showIntegBS(){
+  showInteg()
+  document.getElementById("bs").style.display = "block";
+
+}
+function showIntegTEL(){
+  showInteg()
+  document.getElementById("teli").style.display = "block";
+
+}
+function showIntegGC(){
+  showInteg()
+  document.getElementById("gc").style.display = "block";
+
+}
 $(document).ready(function(){
   $('.reviews__inner').slick({
     infinite: true,
-    dots: true,
-    arrows: false
+    dots: false,
+    arrows: true,
   });
   $('#vid001').click(function(){
     event.preventDefault();
