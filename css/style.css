@@ -609,6 +609,68 @@ footer {
   color: #9DD2F0;
 }
 
+.contacts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 100px 0;
+}
+.contacts p.accent__text {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.contacts img.mes {
+  width: 50%;
+}
+.contacts img.map {
+  margin-top: 120px;
+}
+
+.integ {
+  position: relative;
+}
+.integ__wrapper {
+  background-color: #fff;
+}
+.integ > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.integ__item {
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+}
+.integ__item:hover ~ .integ__text {
+  display: block;
+}
+.integ__text {
+  display: none;
+  background-color: #F7F9F8;
+  padding: 20px 10px;
+}
+.integ .vk {
+  top: 215px;
+  left: 88px;
+}
+.integ .wa {
+  top: 132px;
+  left: 67px;
+}
+.integ .bs {
+  top: 64px;
+  left: 100px;
+}
+.integ .tel {
+  top: 11px;
+  left: 165px;
+}
+.integ .gc {
+  top: 17px;
+  left: 249px;
+}
+
 .fancybox-content {
   background-color: transparent;
 }
