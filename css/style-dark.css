@@ -697,6 +697,20 @@ footer {
   left: 249px;
 }
 
+#dark {
+  width: 80px;
+  height: 40px;
+  background-color: #1A1A18;
+  background-image: url(../images/icons/night.svg);
+  color: transparent;
+  border: none;
+  border-radius: 25px;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 10px;
+}
+
 .fancybox-content {
   background-color: transparent;
 }
@@ -743,4 +757,15 @@ footer {
 }
 .client__item img:hover {
   filter: none;
+}
+
+.contacts__inner {
+  background-color: rgba(42, 42, 42, 0.71);
+}
+
+#dark {
+  background-color: #fff;
+  background-image: url(../images/icons/sun.svg);
+  background-position-x: 50px;
+  filter: invert(1);
 }/*# sourceMappingURL=style-dark.css.map */
