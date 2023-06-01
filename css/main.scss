@@ -619,6 +619,11 @@ left: -25px;
         display: none;
         background-color: $light-gray;
         padding: 20px 10px;
+        position: absolute;
+        top: 60px;
+        left: -50%;
+        width: 200px;
+        text-align: center;
     }
     & .vk{
         top: 215px;
