@@ -24,3 +24,9 @@ $main:#fff;
     background-position-x: 50px;
     filter: invert(1);
 }
+.slick-arrow{
+    filter: brightness(0) invert(1);
+}
+
+#integ-dark{display: inline-block;}
+#integ-light{display: none;}
