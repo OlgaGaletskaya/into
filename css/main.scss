@@ -619,8 +619,9 @@ left: -25px;
         }
     }
     &__source{
-        height: 200px;
+        height: 100%;
         display: none;
+        background-color: $light-gray;
     }
     &>div{
         position: absolute;
